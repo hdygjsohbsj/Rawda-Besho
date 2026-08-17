@@ -12,7 +12,7 @@ export default function EndingMessage() {
   const words = message.split(" ");
 
   // Animation variants
-  const container = {
+  const container: any = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -23,7 +23,7 @@ export default function EndingMessage() {
     }),
   };
 
-  const child = {
+  const child: any = {
     hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
     visible: {
       opacity: 1, y: 0, filter: "blur(0px)",
