@@ -17,7 +17,7 @@ export default function WelcomeMessage({ onComplete }: WelcomeMessageProps) {
   const words = message.split(" ");
 
   // Animation variants
-  const container = {
+  const container: any = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -28,7 +28,7 @@ export default function WelcomeMessage({ onComplete }: WelcomeMessageProps) {
     }),
   };
 
-  const child = {
+  const child: any = {
     hidden: {
       opacity: 0,
       y: 10,

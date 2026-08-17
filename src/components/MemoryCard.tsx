@@ -8,6 +8,7 @@ export type Memory = {
   image_url: string;
   caption: string;
   created_at: string;
+  media_type?: string;
 };
 
 interface MemoryCardProps {
